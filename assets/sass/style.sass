@@ -1,0 +1,381 @@
+$font-family: "Poppins", sans-serif
+$text-color: #333
+$white-color: #fff
+$primary-color: #b61984
+
+body
+  font: 100% $font-family
+  color: $text-color
+  overflow-x: hidden
+
+.main-header
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.menu ul
+  list-style-type: none
+  padding: 0
+  display: flex
+  margin-bottom: 0
+  margin-left: 120px
+
+.menu li
+  margin-left: 40px
+  cursor: pointer
+  font-weight: 500
+  font-size: .9rem
+
+.right-header
+  display: flex
+  align-items: center
+  gap: 20px
+
+.right-header .phone
+  width: 200px
+  font-size: .9rem
+  line-height: 1
+  box-shadow: 0 0 0 3em $primary-color inset
+  color: $white-color
+  border: none
+  outline: none
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1.1em 1.5em
+  background: transparent
+  text-align: center
+  transition: all 300ms ease
+  border-radius: 50px
+
+  i
+    margin-right: 10px
+
+.phone:hover
+  color: $primary-color
+  box-shadow: 0 0 0 1px $primary-color inset
+
+.yellow
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 237px
+  z-index: -1
+
+  img
+    width: 100%
+    height: 100%
+
+.hero-wrapper
+  position: relative
+
+.hero
+  display: grid
+  grid-template-columns: 1fr 1fr
+  height: 80vh
+
+  img
+    display: block
+    width: 100%
+    margin: auto 0
+
+.hero-text
+  display: flex
+  flex-direction: column
+  justify-content: center
+
+  p
+    font-size: 1.2rem
+    color: $primary-color
+    font-weight: 500
+
+  h1
+    font-size: 3.5rem
+    line-height: 1.2
+    margin-bottom: 20px
+    font-weight: 700
+
+.violet
+  position: absolute
+  bottom: -30px
+  left: 0
+  width: 100%
+  height: 50vh
+  z-index: -1
+
+  img
+    width: 100%
+    height: 100%
+
+.person-wrapper
+  position: relative
+  background-color: #dcd1f3
+
+.card
+  border-radius: 10px
+  overflow: hidden
+  transition: all 300ms ease-in-out
+  z-index: 1
+  &:hover
+    box-shadow: 0 30px 30px -10px rgba(0, 0, 0, .2)
+
+.card-body
+  text-align: center
+
+  span
+    color: $primary-color
+    display: block
+    font-weight: 600
+
+  h4
+    font-weight: 600
+    margin: 10px 0
+
+  p
+    font-size: .8rem
+
+.white
+  position: absolute
+  bottom: 0
+  left: 0
+  width: 100%
+  height: 600px
+
+  img
+    width: 100%
+    height: 100%
+
+.contact
+  position: relative
+  .pink
+    position: absolute
+    bottom: 0
+    left: 0
+    width: 100%
+    height: 50vh
+    z-index: -1
+
+    img
+      width: 100%
+      height: 100%
+
+.form-contact
+  position: relative
+  background-color: $white-color
+  border-radius: 10px
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px
+  position: relative
+  z-index: 2
+
+  h2
+    font-weight: 600
+    margin-bottom: 20px
+
+  i
+    color: $primary-color
+
+  .input-group
+    display: flex
+    border-radius: 50px
+    border: 1px solid rgba(0, 0, 0, .1)
+    padding: 10px 0
+
+    .input-group-text
+      background-color: transparent
+      border: none
+
+    .form-customize
+      border: none
+      outline: none
+      box-shadow: none
+      height: 100%
+
+.form-customize:focus .input-group
+  border: 1px solid $primary-color
+
+.select-custom
+  position: relative
+  span
+    color: rgba(0, 0, 0, .5)
+
+.list
+  position: absolute
+  top: 100%
+  left: 0
+  width: 100%
+  display: none
+  border-radius: 10px
+  border: 1px solid rgba(0, 0, 0, .1)
+  list-style-type: none
+  z-index: 100
+  background-color: $white-color
+
+  &.active
+    display: block
+
+  li
+    font-size: .8rem
+    padding: 10px 20px
+    &:last-child
+      border-bottom: none
+
+textarea
+  border: none
+  outline: none
+  padding-left: 10px
+  padding-top: 16px
+
+@media screen and (max-width: 800px)
+  footer
+    background-color: $primary-color
+
+footer
+  position: relative
+  color: $white-color
+  i
+    margin-right: 10px
+  span
+    font-size: .8rem
+  h2
+    font-weight: 600
+    margin-bottom: 20px
+  input
+    border-radius: 50px
+    border: none
+    outline: none
+    box-shadow: none
+    height: 100%
+    background-color: transparent
+    color: $white-color
+    padding: 0 20px
+    text-align: center
+    margin-bottom: 20px
+
+    &::placeholder
+      color: $white-color
+      font-size: .8rem
+
+  button
+    width: 100%
+    font-size: .9rem
+    line-height: 1
+    box-shadow: 0 0 0 3em $white-color inset
+    color: $text-color
+    border: none
+    outline: none
+    display: flex
+    align-items: center
+    justify-content: center
+    padding: 1.1em 1.5em
+    background: transparent
+    text-align: center
+    transition: all 300ms ease
+    border-radius: 50px
+
+    &:hover
+      color: $white-color
+      box-shadow: 0 0 0 1px $white-color inset
+
+  .footer-img
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    width: 100%
+    z-index: -1
+
+    img
+      width: 100%
+
+.group
+  display: flex
+  align-items: center
+  padding: 10px 20px
+  border-radius: 50px
+  border: 1px solid rgba(0, 0, 0, .1)
+
+  input
+    border: none
+    outline: none
+    box-shadow: none
+    height: 100%
+    background-color: transparent
+    color: $primary-color
+    font-size: .8rem
+    padding-left: 10px
+
+.button-custom
+  width: 200px
+  font-size: .9rem
+  line-height: 1
+  box-shadow: 0 0 0 3em $primary-color inset
+  color: $white-color
+  border: none
+  outline: none
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 1.1em 1.5em
+  background: transparent
+  text-align: center
+  transition: all 300ms ease
+  border-radius: 50px
+
+  &:hover
+    color: $primary-color
+    box-shadow: 0 0 0 1px $primary-color inset
+
+body.active .root
+  transform: translateX(320px)
+
+body.active .nav-mb
+  transform: translateX(0)
+
+.nav-mb
+  text-align: center
+  background-color: $white-color
+  height: 100%
+  top: 0
+  bottom: 0
+  position: fixed
+  width: 320px
+  clear: both
+  transform: translateX(-320px)
+  z-index: 101
+  padding: 0
+  -webkit-box-shadow: none
+  box-shadow: none
+  overflow-y: auto
+  overflow-x: hidden
+  transition: transform 1s cubic-bezier(.230,1,.320,1)
+
+  .menu ul
+    margin-top: 50px
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-left: 0
+
+    li
+      margin-left: 0
+      margin-bottom: 40px
+
+  .right-header
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+    margin-left: 0
+    margin-top: 40px
+
+.header-mb
+  background-color: $white-color
+  button
+    background: transparent
+    border: none
+    outline: none
+    padding: 10px
+    cursor: pointer
+    font-size: 1.5rem
